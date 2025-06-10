@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+.sideMenuContainer div {
+    @apply p-3;
+}
+
+.sideMenuContainer div h2 {
+    font-size: clamp(1rem, 1.5dvw, 2rem);
+}
+
+.sideMenuContainer nav ul li {
+    transition: all 0.2s;
+    font-size: clamp(1rem, 1dvw, 1.2rem);
+    @apply font-[400] text-[#4B5563] px-4 py-4;
+}
+
+.sideMenuContainer nav ul li:hover {
+    @apply bg-[#F3F4F6]
+}
+
+.sideMenuContainer nav ul li:active {
+    opacity: .9;
+}
+
+.employeeListContainer {
+    @apply p-6;
+}
+
+.employeeListContainer h1 {
+    font-size: clamp(2rem, 2.5dvw, 3.5rem);
+}

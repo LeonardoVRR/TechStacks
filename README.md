@@ -1,6 +1,6 @@
 # Resultado Final
 
-Link: 
+Link: https://tech-stacks-ex02.netlify.app/
 
 ![alt text](<public/FireShot Capture 027 - Tech Stacks - [localhost].png>)
 

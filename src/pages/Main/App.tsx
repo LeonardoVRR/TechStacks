@@ -2,69 +2,11 @@
 import { useState } from 'react'
 import { MenuLink } from '../../components/MenuLink/MenuLink'
 import { TechStack } from '../../components/TechStack/TechStack'
+import { data } from '../../data/data'
 import './App.css'
 
-const props = {
-  employeeList: [
-    {
-      name: 'Emma Thompson',
-      job: 'UX Researcher',
-    },
-    {
-      name: 'William Davis',
-      job: 'UI Designer',
-    },
-    {
-      name: 'Ava Wilson',
-      job: 'Interaction Designer',
-    },
-    {
-      name: 'Noah Martin',
-      job: 'Design System Lead',
-    },
-    {
-      name: 'Alex Johnson',
-      job: 'Senior React Developer',
-    },
-    {
-      name: 'Mia Chen',
-      job: 'UI Developer',
-    },
-    {
-      name: 'David Park',
-      job: 'JavaScript Specialist',
-    },
-    {
-      name: 'Sarah Miller',
-      job: 'Frontend Lead',
-    },
-  ],
-  menuLinks: [
-    {
-      href: '#all',
-      label: 'All',
-    },
-    {
-      href: '#frontend',
-      label: 'Frontend',
-    },
-    {
-      href: '#backend',
-      label: 'Backend',
-    },
-    {
-      href: '#fullstack',
-      label: 'Fullstack',
-    },
-    {
-      href: '#ui_ux',
-      label: 'UI/UX',
-    },
-  ],
-}
-
 function App() {
-  const { employeeList, menuLinks } = props
+  const { employeeList, menuLinks } = data
 
   const [sectionTitle, setSectionTitle] = useState('All')
 
@@ -81,8 +23,8 @@ function App() {
           <MenuLink
             links={menuLinks}
             employeesList={employeeList}
-            setFilteredListEmployees={setFilteredListEmployees}
             setSectionTitle={setSectionTitle}
+            setFilteredListEmployees={setFilteredListEmployees}
           />
         </nav>
       </aside>

@@ -5,8 +5,8 @@ import type { menuItem } from '../../types/menuItem'
 type data = {
   links: menuItem[]
   employeesList: employee[]
-  setFilteredListEmployees: React.Dispatch<React.SetStateAction<employee[]>>
   setSectionTitle: React.Dispatch<React.SetStateAction<string>>
+  setFilteredListEmployees: React.Dispatch<React.SetStateAction<employee[]>>
 }
 
 const keywordsFilter: { [key: string]: string[] } = {
@@ -19,8 +19,8 @@ const keywordsFilter: { [key: string]: string[] } = {
 export function MenuLink({
   links,
   employeesList,
-  setFilteredListEmployees,
   setSectionTitle,
+  setFilteredListEmployees,
 }: data) {
   const [isActivated, setIsActivated] = useState(window.location.hash)
 

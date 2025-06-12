@@ -1,3 +1,5 @@
+// ReactBits.dev
+
 import React, { useEffect, useRef } from 'react'
 
 interface FuzzyTextProps {
